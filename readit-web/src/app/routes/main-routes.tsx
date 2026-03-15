@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router";
-import Home from "../pages/Home";
-import App from "../App";
-import Login from "../pages/auth/Login";
-import AuthLayout from "../pages/auth/AuthLayout";
-import Signin from "../pages/auth/Signin";
+import Home from "../Home";
+import App from "../../App";
+import Login from "../../features/auth/pages/Login";
+import Signin from "../../features/auth/pages/Signin";
+import AuthLayout from "../../features/auth/pages/AuthLayout";
 export const mainRoutes = createBrowserRouter([
     {
         element: <AuthLayout />,

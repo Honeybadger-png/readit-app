@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import ReactDOM from "react-dom/client";
 import './index.css'
-import { mainRoutes } from './routes/main-routes.tsx';
+import { mainRoutes } from './app/routes/main-routes.tsx';
 import { RouterProvider } from 'react-router/dom';
 
 
