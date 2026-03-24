@@ -1,11 +1,25 @@
 {
   "name": "readit-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx --watch --env-file .env src/index.ts",
+    "start": "node --env-file .env dist/src/index.js",
+    "build" : "tsc",
+    "type-check": "tsc --noEmit"
   },
-  "author": "",
+  "author": "Mert Gul",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.5",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
 }
